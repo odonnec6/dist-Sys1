@@ -2,10 +2,7 @@ import java.net.*;
 import java.io.*;
 
 public class ChatServer implements Runnable 
-{  
-   public static void main(String args[])
-   {  
-
+{ 
    private ChatServerThread clients[] = new ChatServerThread[50];
    private ServerSocket server = null;
    private Thread       thread = null;
@@ -75,7 +72,6 @@ public class ChatServer implements Runnable
    }
    public static void main(String args[]) { /* as before */ }
  }
-}
  
 public class ChatServerThread extends Thread
 {  private ChatServer       server    = null;
